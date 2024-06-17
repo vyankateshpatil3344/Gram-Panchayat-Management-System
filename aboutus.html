@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Council Website</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://fonts/googleapis.com">
+</head>
+
+<body onload="initMap()">
+    <div class="centered-container">
+        <table>
+            <tr>
+                <td>
+                    <img src="pngwing.com.png" alt="img not found">
+                </td>
+                <td>
+                    <h2 style="text-align: start;"><strong>Gram Panchayat Yavaluj<strong></h2>
+                    <h5 style="padding: 1px; text-align: center;">
+                        Tal:Panhala, Dist:Kolhapur
+                    </h5>
+                </td>
+
+                <!-- <td class="contact-info">
+                    <a href="https://mail.google.com">Email</a>
+                    <h5>Phone:123-456-7890</h5>
+                </td> -->
+
+            </tr>
+        </table>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul>
+            <li><a href="index_english.html">Home</a></li>
+            <li>
+                <a href="#">Services ▾</a>
+                <ul class="dropdown">
+                    <li><a href="waterbill.html">Water Bill Payment</a></li>
+                    <li><a href="property_tax.php">Property Bill Payment</a></li>
+                    <li><a href="https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill">MSEB Bill Payment</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Scheme ▾</a>
+                <ul class="dropdown">
+                    <li><a href="https://rdd.maharashtra.gov.in/en/state">State Gov.</a></li>
+                    <li><a href="https://www.india.gov.in/my-government/schemes">Central Gov.</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">Documents ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#">Birth certificate</a></li>
+                    <li><a href="#">Death certificate</a></li>
+                    <li><a href="https://bhulekh.mahabhumi.gov.in/Pune/Home.aspx">7/12,8a etc.</a></li>
+                </ul>
+            </li>
+            <li><a href="commitee.html">Commitee Members</a></li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+
+        </ul>
+        </li>
+    </nav>
+
+    <h2 class="fact-title centered border-back ">About Us</h2>
+
+    <div class="flex-container">
+        <div>
+            <div class="inner-box">
+                <h4>Village</h4>
+                <hr>
+                <ul>
+                    <li>Yavaluj</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="inner-box">
+                <h4>Block/Tahasil</h4>
+                <hr>
+                <ul>
+                    <li>Panhala</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="inner-box">
+                <h4>District</h4>
+                <hr>
+                <ul>
+                    <li>Kolhapur</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="inner-box">
+                <h4>State</h4>
+                <hr>
+                <ul>
+                    <li>Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV03q3NgCS7pqyFy9Q2pYr-22LfVbbltg"></script> -->
+    <!-- <script>
+        function initMap() {
+            // Specify the coordinates for the village
+            var villageCoordinates = { lat: 40.7128, lng: -74.0060 };
+
+            // Create a map centered at the village
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: villageCoordinates,
+            });
+
+            // Add a marker for the village
+            var marker = new google.maps.Marker({
+                position: villageCoordinates,
+                map: map,
+                title: "yavaluj",
+            });
+        }
+
+        // Load the map when the page is fully loaded
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script> -->
+
+
+    <h2 class="fact-title centered border-back">Population of Yavaluj</h2>
+    <section class="facts-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Fact Column 1-->
+                <div class="fact-column col-lg-4 col-md-4 col-sm-6">
+                    <div class="inner">
+                        <div class="fact-box">
+                            <span class="count-box">4000</span>
+                        </div>
+                        <h4 class="fact-title"><b>Male Population</b></h4>
+                    </div>
+                </div>
+                <!--Fact Column 2-->
+                <div class="fact-column col-lg-4 col-md-4 col-sm-6">
+                    <div class="inner">
+                        <div class="fact-box">
+                            <span class="count-box">5960</span>
+                        </div>
+                        <h4 class="fact-title"><b>Females Population</b></h4>
+                    </div>
+                </div>
+                <!--Fact Column 3-->
+                <div class="fact-column col-lg-4 col-md-4 col-sm-6">
+                    <div class="inner">
+                        <div class="fact-box">
+                            <span class="count-box">9960</span>
+                        </div>
+                        <h4 class="fact-title"><b> Total <p>Population</p></b> </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h2 class="fact-title centered border-back">Gallery</h2>
+    <div class="gallery-wrap">
+        <img src="back.png" id="backbtn">
+
+
+        <div class="gallery">
+
+
+            <div>
+                <span><img src="gallery/p1.jpg" alt="">
+
+
+                </span>
+                <span><img src="gallery/p3.jpg" alt="">
+
+
+                </span>
+                <span><img src="gallery/p6.jpg" alt="">
+                    <h3>Gram Daivat</h3>
+                </span>
+            </div>
+            <div>
+                <span><img src="gallery/10.jpg" alt="">
+                </span>
+                <span><img src="gallery/11.jpg" alt="">
+
+
+                </span>
+                <span><img src="gallery/12.jpg" alt="">
+                   <h3>Monsoon</h3> <h4></h4><p>Earthen walls glisten,<br> laughter fills the air,<br> as children dance in puddles,<br> a joyous monsoon prayer.</p> </h4>
+                </span>
+            </div>
+            <div>
+                <span><img src="gallery/p2.jpg" alt="">
+
+
+                </span>
+                <span><img src="gallery/p4.jpg" alt="">
+                <h3> Rural Life </h3>  <h4></h4> <p>Sun on your face,<br> soil beneath your feet,<br> a simple life, <br>forever sweet.</p></h4>
+                </span>
+                <span><img src="gallery/p7.jpg" alt="">
+
+
+                </span>
+               
+            </div>
+
+
+        </div>
+
+        <img src="next.png" id="nextbtn">
+    </div>
+
+
+
+    <h2 class="fact-title centered border-back">Commitee Members</h2>
+
+
+    <div class="gallery-wrap">
+        <img src="back.png" id="backbtn">
+
+
+        <div class="gallery">
+            <div>
+                <span><img src="images4.jpg" alt="">
+                    <h4>Kartik N. Bhosale<p>Leader of village</p>
+                    </h4>
+                </span>
+                <span><img src="images5.jpg" alt="">
+                    <h4>Jay D. Naik<p>commitee Member</p>
+                    </h4>
+                </span>
+                <span><img src="images6.jpg" alt="">
+                    <h4>Manoj R. Yadav<p>commitee Member</p>
+                    </h4>
+                </span>
+            </div>
+            <div>
+                <span><img src="images.jpg" alt="">
+                    <h4>Ram L.patil<p>Leader of village</p>
+                    </h4>
+                </span>
+                <span><img src="images2.jpg" alt="">
+                    <h4>Sanket P.patil <p>Commitee Member</p>
+                    </h4>
+                </span>
+                <span><img src="images3.jpg" alt="">
+                    <h4>Pavan M. naik<p>Commitee Member</p>
+                    </h4>
+                </span>
+
+            </div>
+
+            <div>
+
+                <span><img src="images6.jpg" alt="">
+                    <h4>Manoj R. Yadav<p>commitee Member</p>
+                    </h4>
+                </span>
+                <span><img src="images7.jpg" alt="">
+                    <h4>Manasi B. Bore<p>commitee Member</p>
+                    </h4>
+                </span>
+                <span><img src="images8.jpg" alt="">
+                    <h4>Prajyot S. jadhav<p>commitee Member</p>
+                    </h4>
+                </span>
+
+            </div>
+            <div>
+                <span><img src="images9.jpg" alt="">
+                    <h4>Mahesh M. Kashid<p>commitee Member</p>
+                    </h4>
+                </span>
+                <span><img src="images10.jpg" alt="">
+                    <h4>Vaibhav C. Bhosale<p>Clerk</p>
+                    </h4>
+                </span>
+                <span><img src="images11.jpg" alt="">
+                    <h4>Mayur B. Bore<p>Clerk</p>
+                    </h4>
+                </span>
+            </div>
+        </div>
+        <img src="next.png" id="nextbtn">
+    </div>
+
+    <section id="about">
+
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="grampanchyat-info">
+            <h2 class="fact-title centered border-back">About Us</h2>
+            <p>Yavaluj Grampanchayat,
+                <br> Grampanchyat Office Yavaluj, </br>
+                Taluka Panhala, District Kolhapur
+            </p>
+            <hr>
+            <p>Opening hrs
+                <br>Mon-Sat: 10:00-17:45</br>
+                2nd and 4th Saturday Closed
+            </p>
+            <h2 class="fact-title centered border-back ">Contact Us</h2>
+            <section id="contact">
+
+                <p>If you have any questions or need assistance, feel free to contact us:</p>
+                <address>
+                    Email: <a href="mailto:info@villagecouncil.com">www.grampanchyatyavaluj@gmail.com</a><br>
+                    Phone: 8625032796
+                </address>
+            </section>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Village Council. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV03q3NgCS7pqyFy9Q2pYr-22LfVbbltg"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: { lat: 16.758822, lng: 74.055506 }, // Coordinates for Yevaluj
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: 16.758822, lng: 74.055506 }, // Coordinates for Yevaluj
+                map: map,
+                title: "Yevaluj, Maharashtra, India",
+            });
+        }
+    </script>
+    <script>
+        // Load the map when the Google Maps API is fully loaded
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+</body>
+
+</html>

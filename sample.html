@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        #map {
+            height: 400px;
+        }
+        #pano {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Website</h1>
+    <div id="map"></div>
+    <div id="pano"></div>
+    <script>
+        let map, panorama;
+
+        function initMap() {
+            // Initialize map
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 16.758822, lng: 74.055506 },
+                zoom: 15,
+                mapTypeId: 'satellite', // Set map type to satellite view
+            });
+
+            // Initialize street view panorama
+            panorama = new google.maps.StreetViewPanorama(
+                document.getElementById("pano"),
+                {
+                    position: { lat: 16.758822, lng: 74.055506 },
+                    pov: { heading: 0, pitch: 0 },
+                    zoom: 1,
+                }
+            );
+
+            // Set the street view panorama to the map
+            map.setStreetView(panorama);
+
+            // Add a marker for the specific location with a label
+            const marker = new google.maps.Marker({
+                position: { lat: 16.758822, lng: 74.055506 },
+                map: map,
+                label: 'Yevaluj', // Display village name as the marker label
+                title: "Yevaluj, Maharashtra, India",
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV03q3NgCS7pqyFy9Q2pYr-22LfVbbltg&callback=initMap" async defer></script>
+</body>
+</html>

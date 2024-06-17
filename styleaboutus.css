@@ -1,0 +1,30 @@
+.image-scroll-container {
+    width: 1000px; /* Adjust width as needed */
+    height: 1000px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-scroll {
+    display: flex;
+    animation: scroll-images 10s linear infinite; /* Adjust animation duration and timing as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .image-scroll img {
+    width: auto; /* Adjust image width as needed */
+    height: 200%;
+    object-fit: contain; /* Ensures images fill the container */
+  }
+  
+  @keyframes scroll-images {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% + 200px)); /* Adjust the value based on image width */
+    }
+  }
+  

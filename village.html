@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Council Website</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <h1>Welcome to Village Council Website</h1>
+        <p>Please select your language:</p>
+        <button onclick="selectLanguage('Marathi')">मराठी</button>
+        <button onclick="selectLanguage('English')">English</button>
+    </div>
+
+    <script>
+        function selectLanguage(language) {
+            if (language === 'Marathi') {
+                // Redirect to Marathi version of the website
+                window.location.href = 'index_marathi.html';
+            } else if (language === 'English') {
+                // Redirect to English version of the website
+                window.location.href = 'index_english.html';
+            }
+        }
+    </script>
+</body>
+</html>

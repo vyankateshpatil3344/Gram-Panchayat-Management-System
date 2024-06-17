@@ -1,0 +1,75 @@
+
+
+.inner-box {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-weight: 280;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+/* Styles for the outer box */
+.outer-box {
+    margin: 20px;
+    border: 1px solid #667bd5;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+   
+    
+    /* background-color: rgb(253, 254, 255); */
+  }
+  
+  .flex-container > div {
+    /* background-color: #6a2121; */
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+/* Styles for the inner block */
+.inner-box {
+    background-color: 0faa9f;
+    border-radius: 10px;
+    padding: 15px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Gap between columns */
+}
+
+#map-container {
+    grid-column: 1; /* Map on the left (first column) */
+    height: 400px; /* Set a fixed height for the map container */
+}
+
+#grampanchyat-info {
+    grid-column: 2; /* Grampanchyat info on the right (second column) */
+}
+
+#map {
+    height: 100%; /* Fill the entire height of the map container */
+    width: 100%; /* Fill the entire width of the map container */
+}
